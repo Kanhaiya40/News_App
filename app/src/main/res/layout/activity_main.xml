@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_news"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            android:textSize="45sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/node"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="10dp"
+            android:autofillHints="@string/enter_node_name"
+            android:background="@drawable/editor_background"
+            android:gravity="center"
+            android:hint="@string/enter_node_name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/node"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:autofillHints="@string/enter_header"
+            android:background="@drawable/editor_background"
+            android:gravity="center"
+            android:hint="@string/enter_header"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:autofillHints="@string/enter_image_link"
+            android:background="@drawable/editor_background"
+            android:gravity="center"
+            android:hint="@string/enter_image_link"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:autofillHints="@string/enter_visit_source"
+            android:background="@drawable/editor_background"
+            android:gravity="center"
+            android:hint="@string/enter_visit_source"
+            android:inputType="textUri" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:onClick="processed"
+            android:text="@string/add_news"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</layout>
