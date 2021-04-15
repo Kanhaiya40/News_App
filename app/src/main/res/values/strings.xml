@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">newsapllication</string>
+    <string name="header">Header</string>
+    <string name="subheader">SubHeader</string>
+    <string name="visit_resource">Visit Resource</string>
+    <string name="new_image">New Image</string>
+    <string name="interstitialad">InterstitialAd</string>
+</resources>
